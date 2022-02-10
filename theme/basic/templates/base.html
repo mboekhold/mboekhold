@@ -40,7 +40,8 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                <h1 id="sitename"><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+                <span id="subtitle">{% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}</span>
         </header><!-- /#banner -->
         <nav id="menu"><ul>
         {% for title, link in MENUITEMS %}

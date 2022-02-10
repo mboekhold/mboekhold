@@ -1,13 +1,17 @@
 THEME = 'basic'
 AUTHOR = 'Miguel Boekhold'
 SITENAME = 'Miguel Boekhold'
+SITESUBTITLE = 'Learning by doing & the pursuit of deep understanding'
 SITEURL = ''
 CUSTOM_CSS = 'static/custom.css'
 PATH = 'content'
+DEFAULT_METADATA = {
+    'status': 'draft',
+}
 
-TIMEZONE = 'Europe/Rome'
+TIMEZONE = 'Europe/Amsterdam'
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

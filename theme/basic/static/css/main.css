@@ -11,6 +11,10 @@ body {
   display: block;
 }
 
+#sitename {
+    margin-bottom: 0px !important;
+}
+
 a:link    { color: blue; text-decoration: none;      }
 a:hover   { color: blue; text-decoration: underline; }
 a:visited { color: blue;                             }
@@ -37,6 +41,7 @@ pre {
 }
 
 .social-links {
+    margin-top: 10px;
     display: flex;
 }
 
