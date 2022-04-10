@@ -8,7 +8,6 @@ PATH = 'content'
 DEFAULT_METADATA = {
     'status': 'draft',
 }
-STATIC_PATHS = ['images']
 
 TIMEZONE = 'Europe/Amsterdam'
 

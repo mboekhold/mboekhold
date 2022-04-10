@@ -43,18 +43,20 @@
         <br>
         <span>{{ article.read}} read</span>
     {% endif %}
-    {% if article.authors %}
+    <!--{% if article.authors %}
     <address class="vcard author">
       By {% for author in article.authors %}
           <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
         {% endfor %}
     </address>
-    {% endif %}
-    {% if article.category %}
-    <div class="category">
-        Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-    </div>
-    {% endif %}
+    {% endif %}-->
+    <!--
+      {% if article.category %}
+      <div class="category">
+          Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+      </div>
+      {% endif %}
+    -->
     {% if article.tags %}
     <div class="tags">
         Tags:
@@ -64,9 +66,6 @@
     </div>
     {% endif %}
   </footer><!-- /.post-info -->
-  <div class="image">
-    <img src="{{article.image}}">
-  </div>
   <div class="entry-content">
     {{ article.content }}
   </div><!-- /.entry-content -->
