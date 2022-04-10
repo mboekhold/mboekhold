@@ -8,10 +8,15 @@ PATH = 'content'
 DEFAULT_METADATA = {
     'status': 'draft',
 }
-
+STATIC_PATHS = ['images/favicon.ico']
+EXTRA_PATH_METADATA = {
+    'images/favicon.ico': {'path': 'favicon.ico'}
+}
 TIMEZONE = 'Europe/Amsterdam'
 
 DEFAULT_LANG = 'en'
+
+FAVICON = "static/images/favicon.ico"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
