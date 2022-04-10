@@ -1,13 +1,14 @@
-THEME = 'basic'
+THEME = 'theme/basic'
 AUTHOR = 'Miguel Boekhold'
 SITENAME = 'Miguel Boekhold'
-SITESUBTITLE = 'Learning by doing & the pursuit of deep understanding'
+SITESUBTITLE = 'Learning by doing'
 SITEURL = ''
 CUSTOM_CSS = 'static/custom.css'
 PATH = 'content'
 DEFAULT_METADATA = {
     'status': 'draft',
 }
+STATIC_PATHS = ['images']
 
 TIMEZONE = 'Europe/Amsterdam'
 

@@ -1,3 +1,9 @@
 body {
     min-width: none;
 }
+.image {
+    width: 200px;
+}
+.image img {
+    width: auto;
+}

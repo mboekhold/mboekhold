@@ -2,6 +2,7 @@ Title: Hello world
 Date: 2022-02-10 10:20
 Status: published
 Read: 0 min
+Category: general
 
 Welcome to this site. I hope to capture the most fascinating questions and lessons that crosses my path and express them here. It's usually difficult for me to express what is on my mind, hopefully, writing will become a way I can express myself more clearly.
 
