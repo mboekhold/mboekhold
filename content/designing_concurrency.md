@@ -16,7 +16,7 @@ We designed this new version to accept a json file containing a list of all of t
 
 Soon I would one of the pains of software development, understanding the underlying decision you made in your application that you yourself probably didn't understand that well.
 
-I will reproduce this mistake I made with a simple example.
+I will reproduce this mistake I made with a simple example. Imagine you are interested in buying your favourite rubber duck from an online store 
 
 ```python
 ...
