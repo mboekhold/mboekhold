@@ -1,6 +1,6 @@
 Title: A sense of direction
 Date: 2022-04-07 06:55
-Status: published
+Status: draft
 Read: 0 min
 category:general
 
