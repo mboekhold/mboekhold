@@ -10,20 +10,12 @@ that takes in real-time audio, processes it, and feeds it to an AI Model to fina
 This first version was adequate, but then came some design limitations to this application. How do we manage multiple cameras? currently we would have to 
 run the script on each camera individually. running the script with arguments defining which camera we want to run the script on. This was not a desirable situation for us. we wanted to encapsulate the management of all the cameras into one script, making it easier to manage and scale.
 
-This lead us to develop a second version of the application. and soon, at first glance, the decision was clear to have a "Multi-threadead" application that runs some processes per camera relating to audio collection, model detection and alarm sending.
+This lead us to develop a second version of the application. and soon, at first glance, the decision was clear to have a "concurrent" application that runs some processes per camera relating to audio collection, model detection and alarm sending.
 
 We designed this new version to accept a json file containing a list of all of the cameras, and from there to spin up some threads to do some processes, and finally send an alert through an API if we have detected a baby cry.
 
 Soon I would one of the pains of software development, understanding the underlying decision you made in your application that you yourself probably didn't understand that well.
 
-I will reproduce this mistake I made with a simple example. Imagine you are interested in buying your favourite rubber duck from an online store 
+I designed this concurrent application with the following
 
-```python
-...
-
-def main():
-    some_code()
-
-...
-
-```
+![MyImage]({attach}images/threads.png)
