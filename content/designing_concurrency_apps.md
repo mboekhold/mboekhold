@@ -1,9 +1,10 @@
-Title: Designing concurrent applications
+Title: Choosing concurrency techniques in Python
 Date: 2022-04-15 20:00
 Status: published
-Read: 0 min
-Category: tech
+Read: 3 min
+Category: Technology
 
+<!-- ## The Problem -->
 While working on one of my first projects, I encountered a peculiar situation while using threads in a python application. We had developed a script
 that takes in real-time audio, processes it, and feeds it to an AI Model to finally make a prediction if the audio signal is of a baby crying or not. the first version was quite simple, it worked on a single camera and could detect with decent accuracy if an audio signal contained a baby cry and send an alert through an API.
 
@@ -16,7 +17,7 @@ We designed this new version to accept a json file containing a list of all of t
 
 Soon I would one of the pains of software development, understanding the underlying decision you made in your application that you yourself probably didn't understand that well.
 
-The application looked like the following:
+The application looked something like the following:
 
 ![MyImage]({attach}images/threads.png)
 
@@ -50,6 +51,7 @@ def cry_detection():
 
 Soon after testing this new version, I stopped getting any logs printed to the console after a few minutes. I had no clue what the problem was, seemed like the application just hangs after a few minutes?
 
+<!-- ## Debugging -->
 After googling around, I found a handy tool called gdb (The GNU Debugger). In short, gdb allows you to see what is going on "inside" another program while it executes or what it was doing at the moment it crashed.
 
 I launch the script and attach the gdb debugger on the process ID (PID)
@@ -84,6 +86,7 @@ after a few minutes, I get the following logging info:
 
 I'm no expert, but what I can get from this stack trace is that the application is trying to acquire the interpretor lock, but  it seems to be timing out? I assume this has something to do with python's GIL. 
 
+<!-- ## Choosing concurrency -->
 But what is going on anyway? dealing with this problem made me revisit concurrency as a whole, I realised that I did not understand the topic as well as I thought.
 
 First of all, what is concurrency and how do we acheive it?
@@ -96,3 +99,21 @@ To achieve concurrency in Python, there are 3 options.
 - Pre-emptive multitasking (threading)
 - Cooperative multitasking (asyncio)
 - Multiprocessing (multiprocessing)
+
+This begs the question, when should you choose which one?
+
+<!-- ## Making the right choice -->
+There's some simple pseudo-code we can follow
+
+```python
+if io_bound:
+    if io_very_slow:
+        print("Use Asyncio")
+    else:
+        print("Use threads")
+else:
+    print("Multi Processing")
+```
+
+And since the concurrent requirement of the new version of the application was CPU-bound, made it very obvious that threads was not the right decision. I finally solved the problem implementing the version using multi-processing.
+

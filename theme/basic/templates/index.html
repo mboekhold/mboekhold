@@ -10,7 +10,8 @@
                 <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
                 <footer class="post-info">
                     <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time><br>
-                    <span>{{ article.read}} read</span>
+                    <span>{{ article.read}} read</span><br>
+                    <span> Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>
                     <!--
                     <address class="vcard author">By
                     {% for author in article.authors %}
