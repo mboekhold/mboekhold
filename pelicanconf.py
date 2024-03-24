@@ -1,7 +1,7 @@
 THEME = 'theme/basic'
 AUTHOR = 'Miguel Boekhold'
 SITENAME = 'Miguel Boekhold'
-SITESUBTITLE = 'Building software, writing lessons'
+SITESUBTITLE = 'Coding the future, lifelong learning, and embracing creativity.'
 SITEURL = ''
 CUSTOM_CSS = 'static/custom.css'
 PATH = 'content'
