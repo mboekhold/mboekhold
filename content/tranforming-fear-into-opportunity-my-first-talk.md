@@ -1,6 +1,6 @@
 Title: Transforming Fear into Opportunity: My First Talk
 Date: 2024-03-23 18:45
-Status: Published
+Status: published
 Read: 4 min
 Category: Learning
 
