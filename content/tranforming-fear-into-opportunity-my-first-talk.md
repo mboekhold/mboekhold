@@ -3,10 +3,9 @@ Date: 2024-03-23 18:45
 Status: published
 Read: 4 min
 Category: Learning
+Summary: >"*I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear...*
 
-
-![MyImage]({attach}images/my_first_pitch.jpeg)
-
+![My First Pitch]({attach}images/my_first_pitch.jpeg)
 >"*I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain*" - Frank Hurbert
 
 In the weeks leading up to my talk on that stage, my heart raced with fear. The fear of failure, the fear of being inadequate, consumed me. Yet, buried deep inside, there was a flicker of determination&mdash;a drive to conquer this fear, to take on the challenge that had long intimidated me. For years, I had avoided public speaking. It was one of those things I wouldn't dare attempt, fearing embarrassment and judgment. But I knew that if I truly wanted to grow, to become a leader, I couldn't continue to let this fear hold me back. So, I made a conscious decision to confront it head-on. This is the story of how I found the courage to face one of my deepest fears, a fear that had haunted me for as long as I could remember.

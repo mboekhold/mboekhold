@@ -95,6 +95,11 @@ pre {
     padding: 10px
 }
 
+img {
+    width: 400px;
+    height: auto;
+}
+
 @media screen and (max-width: 500px) {
     h1 {
         font-size: 30px;
