@@ -37,3 +37,8 @@ DEFAULT_PAGINATION = 5
 #RELATIVE_URLS = True
 
 TEMPLATE_PAGES = {'paintings.html': 'paintings.html'}
+STATIC_PATHS = ['static', 'images/paintings']
+PAINTINGS = [
+    'images/paintings/lake_with_tree.jpeg',
+    'images/paintings/blue_dog.jpeg',
+]

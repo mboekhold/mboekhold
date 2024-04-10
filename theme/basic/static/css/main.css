@@ -1,26 +1,54 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #0d1117;
-  color: #fff;
-  display: block;
-  margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0d1117;
+    color: #fff;
+    display: block;
+    margin: 0px;
 }
 
-a:link    { color: #58a6ff; text-decoration: none;      }
-a:hover   { color: #58a6ff; text-decoration: underline; }
-a:visited { color: #58a6ff;                             }
+a:link {
+    color: #58a6ff;
+    text-decoration: none;
+}
 
-h1 a { color: inherit !important }
-h2 a { color: inherit !important }
-h3 a { color: inherit !important }
-h4 a { color: inherit !important }
-h5 a { color: inherit !important }
-h6 a { color: inherit !important }
+a:hover {
+    color: #58a6ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #58a6ff;
+}
+
+h1 a {
+    color: inherit !important
+}
+
+h2 a {
+    color: inherit !important
+}
+
+h3 a {
+    color: inherit !important
+}
+
+h4 a {
+    color: inherit !important
+}
+
+h5 a {
+    color: inherit !important
+}
+
+h6 a {
+    color: inherit !important
+}
 
 #banner {
     border-bottom: 1px solid #21262d;
     padding: 10px;
 }
+
 #banner #title {
     max-width: 900px;
     margin: auto;
@@ -29,18 +57,22 @@ h6 a { color: inherit !important }
     display: flex;
     align-items: center;
 }
+
 #subtitle {
     max-width: 900px;
     margin: auto;
     padding: 0px;
     font-size: 14px;
 }
+
 #categories {
     margin-left: auto;
 }
+
 h1 {
     margin: 0px;
 }
+
 #menu li {
     display: inline;
 }
@@ -52,6 +84,7 @@ h1 {
     padding: 10px;
     line-height: 1.7;
 }
+
 #post-list {
     margin-bottom: 1em;
     margin-top: 1em;
@@ -60,6 +93,7 @@ h1 {
     padding-bottom: 10px;
 
 }
+
 #post-list li:not(:last-child) {
     border-bottom: 1px solid #21262d
 }
@@ -70,16 +104,18 @@ pre {
 }
 
 .social-links {
-    margin-top: 10px; 
+    margin-top: 10px;
     display: flex;
 }
 
 .social-link {
     margin-right: 10px;
 }
+
 .entry-content {
     font-size: 16px;
 }
+
 .entry-content blockquote {
     font: italic;
     margin-top: 10px;
@@ -104,4 +140,52 @@ img {
     h1 {
         font-size: 30px;
     }
+}
+
+.mosaic-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+}
+
+.tile {
+    position: relative;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tile:nth-child(1) {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.tile:nth-child(2),
+.tile:nth-child(3) {
+    grid-column: span 2;
+}
+
+.tile:nth-child(4),
+.tile:nth-child(5) {
+    grid-column: span 3;
+}
+
+.enlarge-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: fit-content;
+}
+
+.enlarge-button:hover {
+    cursor: pointer;
+}
+
+.enlarge-button svg {
+    display: block;
+    width: 23px;
+    height: 23px;
 }
