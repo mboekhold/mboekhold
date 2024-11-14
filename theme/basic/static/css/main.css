@@ -1,7 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #0d1117;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
     display: block;
     margin: 0px;
 }
@@ -45,8 +45,8 @@ h6 a {
 }
 
 #banner {
-    border-bottom: 1px solid #21262d;
     padding: 10px;
+    border-bottom: 1px solid #c1c1c1;
 }
 
 #banner #title {
@@ -95,7 +95,7 @@ h1 {
 }
 
 #post-list li:not(:last-child) {
-    border-bottom: 1px solid #21262d
+    border-bottom: 1px solid #c1c1c1;
 }
 
 pre {
@@ -132,8 +132,9 @@ pre {
 }
 
 img {
-    width: 400px;
+    max-width: 600px;
     height: auto;
+    display: block;
 }
 
 @media screen and (max-width: 500px) {
@@ -143,6 +144,7 @@ img {
 }
 
 .mosaic-container {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
@@ -178,6 +180,7 @@ img {
     bottom: 5px;
     right: 5px;
     width: fit-content;
+    color: white;
 }
 
 .enlarge-button:hover {
@@ -188,4 +191,37 @@ img {
     display: block;
     width: 23px;
     height: 23px;
+}
+
+#nav-menu {
+    margin-left: auto;
+    display: flex;
+}
+
+#nav-menu a {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#mobile-nav-menu {
+    display: none;
+    margin-left: auto;
+}
+#menu-btn:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    #mobile-nav-menu {
+      display: block;
+    }
+
+    img {
+        width: 100%;
+    }
+  
+    #nav-menu {
+      display: none;
+    }
 }
