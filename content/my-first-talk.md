@@ -1,4 +1,4 @@
-Title: Transforming Fear into Opportunity: My First Talk
+Title: My First Talk
 Date: 2024-03-23 18:45
 Status: published
 Read: 4 min
@@ -8,9 +8,8 @@ Summary: >"*I must not fear. Fear is the mind-killer. Fear is the little-death t
 <br>
 ![My First Pitch]({attach}images/my_first_pitch.jpeg)
 <br>
-<br>
 
-#Transforming Fear into Opportunity: My First Talk
+#My First Talk
 
 >"*I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain*" - Frank Hurbert
 

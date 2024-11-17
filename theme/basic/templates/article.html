@@ -27,9 +27,36 @@
  {% import 'translations.html' as translations with context %}
  {{ translations.translations_for(article) }}
   </header>
-  
-  <div class="entry-content">
-    {{ article.content }}
-  </div><!-- /.entry-content -->
+  <div class="entry">
+    <div class="entry-content">
+      {{ article.content }}
+    </div>
+    <ul class="entry-meta">
+      <li style="display: flex;">
+        <div style="font-weight: bold;">
+          Read:
+        </div>
+        <div style="margin-left: auto;">
+          {{ article.read }}
+        </div>
+      </li>
+      <li style="display: flex;">
+        <div style="font-weight: bold;">
+          Date:
+        </div>
+        <div style="margin-left: auto;">
+          {{ article.date.strftime('%d %B %Y') }}
+        </div>
+      </li>
+      <li style="display: flex;">
+        <div style="font-weight: bold;">
+          Category:
+        </div>
+        <div style="margin-left: auto;">
+          <a href="{{ SITEURL }}/category/{{ article.category }}">{{ article.category }}</a>
+        </div>
+      </li>
+    </div>
+  </div>
 </section>
 {% endblock %}

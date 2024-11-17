@@ -79,13 +79,13 @@
           <a href="{{ SITEURL }}/about">About</a>
         </div>
       </div>
-      <div id="mobile-nav-menu">
+      <div id="mobile-nav-menu" onclick="toggleMenu()">
         <div id="menu-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 36px;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 30px;">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>               
         </div>
-        <!-- <div id="mobile-nav-options">
+        <div id="mobile-nav-options" style="display: none;" >
           <div>
             <a href="{{ SITEURL }}/">Blog</a>
           </div>
@@ -93,12 +93,9 @@
             <a href="{{ SITEURL }}/blog">Projects</a>
           </div>
           <div>
-            <a href="{{ SITEURL }}/paintings">Paintings</a>
-          </div>
-          <div>
             <a href="{{ SITEURL }}/about">About</a>
           </div>
-        </div> -->
+        </div>
       </div>
       <!-- {% if DISPLAY_CATEGORIES_ON_MENU %}
                   <select name="categories" id="categories">

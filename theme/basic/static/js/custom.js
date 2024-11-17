@@ -12,3 +12,11 @@ window.addEventListener('resize', function() {
     document.getElementById('mobile-nav-menu').style.display = 'block';
   }
 });
+
+function toggleMenu() {
+  if (document.getElementById('mobile-nav-options').style.display === 'none') {
+    document.getElementById('mobile-nav-options').style.display = 'block';
+  } else {
+    document.getElementById('mobile-nav-options').style.display = 'none';
+  }
+}
