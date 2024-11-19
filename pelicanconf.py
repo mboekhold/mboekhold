@@ -35,9 +35,23 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-TEMPLATE_PAGES = {'paintings.html': 'paintings.html'}
+TEMPLATE_PAGES = {'paintings.html': 'paintings.html', "projects.html": "projects.html", "about.html": "about.html"}
 STATIC_PATHS = ['static', 'images/paintings']
 PAINTINGS = [
     'images/paintings/lake_with_tree.jpeg',
     'images/paintings/blue_dog.jpeg',
+]
+PROJECTS = [
+    {
+        "title": "Early Moves",
+        "description": "This is a project",
+        "image": "images/paintings/lake_with_tree.jpeg",
+        "url": "https://www.google.com"
+    },
+    {
+        "title": "Cry Detection",
+        "description": "This is a project",
+        "image": "images/paintings/blue_dog.jpeg",
+        "url": "https://www.google.com"
+    }
 ]
