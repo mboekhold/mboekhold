@@ -81,11 +81,17 @@
       </div>
       <div id="mobile-nav-menu" onclick="toggleMenu()">
         <div id="menu-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 30px;">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>               
+          <svg id="menu-btn-open" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="icon-lg mx-2 text-token-text-secondary">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3 8C3 7.44772 3.44772 7 4 7H20C20.5523 7 21 7.44772 21 8C21 8.55228 20.5523 9 20 9H4C3.44772 9 3 8.55228 3 8ZM3 16C3 15.4477 3.44772 15 4 15H14C14.5523 15 15 15.4477 15 16C15 16.5523 14.5523 17 14 17H4C3.44772 17 3 16.5523 3 16Z"
+              fill="currentColor"></path>
+          </svg>
+          <svg id="menu-btn-close" style="display: none;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>          
         </div>
-        <div id="mobile-nav-options" style="display: none;" >
+        <div id="mobile-nav-options" style="display: none;">
           <div>
             <a href="{{ SITEURL }}/">Blog</a>
           </div>
@@ -133,4 +139,5 @@
   </footer><!-- /#contentinfo -->
 </body>
 <script src="{{ SITEURL }}/theme/js/custom.js"></script>
+
 </html>

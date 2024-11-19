@@ -16,7 +16,11 @@ window.addEventListener('resize', function() {
 function toggleMenu() {
   if (document.getElementById('mobile-nav-options').style.display === 'none') {
     document.getElementById('mobile-nav-options').style.display = 'block';
+    document.getElementById('menu-btn-open').style.display = 'none';
+    document.getElementById('menu-btn-close').style.display = 'block';
   } else {
+    document.getElementById('menu-btn-close').style.display = 'none';
+    document.getElementById('menu-btn-open').style.display = 'block';
     document.getElementById('mobile-nav-options').style.display = 'none';
   }
 }
