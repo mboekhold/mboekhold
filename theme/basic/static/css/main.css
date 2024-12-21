@@ -120,15 +120,18 @@ pre {
 
 .entry-content {
     font-size: 16px;
-    text-align: justify;
 }
-.entry-meta {
-    margin-top: 30px;
-    border-radius: 5px;
-    padding: 10px;
+.related {
+    margin-top: 45px;
 }
-.entry-meta li {
-    padding-top: 10px;
+
+.related-posts {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.related-posts li {
+    padding: 5px 0px;
 }
 
 .entry-content blockquote {
@@ -151,12 +154,6 @@ img {
     height: auto;
     display: block;
     border-radius: 10px;
-}
-
-@media screen and (max-width: 500px) {
-    h1 {
-        font-size: 30px;
-    }
 }
 
 .mosaic-container {
@@ -216,7 +213,7 @@ img {
 
 #mobile-nav-options {
     position: absolute;
-    top: 70px;
+    top: 50px;
     left: 0;
     width: 100%;
     background-color: #fff;
@@ -246,7 +243,9 @@ img {
 
 
 @media (max-width: 768px) {
-
+    h1 {
+        font-size: 22px;
+    }
     .entry {
         grid-template-columns: 100%;
     }

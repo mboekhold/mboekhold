@@ -41,17 +41,4 @@ PAINTINGS = [
     'images/paintings/lake_with_tree.jpeg',
     'images/paintings/blue_dog.jpeg',
 ]
-PROJECTS = [
-    {
-        "title": "Early Moves",
-        "description": "This is a project",
-        "image": "images/paintings/lake_with_tree.jpeg",
-        "url": "https://www.google.com"
-    },
-    {
-        "title": "Cry Detection",
-        "description": "This is a project",
-        "image": "images/paintings/blue_dog.jpeg",
-        "url": "https://www.google.com"
-    }
-]
+PLUGINS = ['pelican_related_posts']
