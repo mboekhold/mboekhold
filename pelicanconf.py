@@ -41,4 +41,3 @@ PAINTINGS = [
     'images/paintings/lake_with_tree.jpeg',
     'images/paintings/blue_dog.jpeg',
 ]
-PLUGINS = ['pelican_related_posts']
