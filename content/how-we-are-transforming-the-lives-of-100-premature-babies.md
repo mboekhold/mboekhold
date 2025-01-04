@@ -1,4 +1,4 @@
-Title: How Our Software Is Making a Difference for 100 Premature Babies
+Title: How Our Software Is Making a Difference for 100 Premature Babies So Far
 Date: 2024-11-23 18:45
 Status: published
 Read: 2 min
@@ -11,7 +11,7 @@ Summary: An estimated 15,000 babies have been born prematurely in the Netherland
 <br>
 
 
-# How Our Software Is Making a Difference for 100 Premature Babies
+# How Our Software Is Making a Difference for 100 Premature Babies So Far
 
 An estimated 15,000 babies have been born prematurely in the Netherlands this year, and approximately 500 of them are at risk of serious physical or physiological problems—problems that could confine them to a wheelchair, prevent them from participating in sports, playing music, or dancing to their favorite songs. Thankfully, there is hope. Trained professionals can now perform a diagnosis that allow early intervention. By analyzing natural movement patterns, they can accurately identify developmental shortcomings and address these issues through physical therapy while the brain is still 'plastic' and adaptable. This breakthrough promises significant benefits not only for prematurely born babies but also for their caregivers and society as a whole. The ultimate goal is to ensure that all 15,000 premature babies born in the Netherlands each year have an equal opportunity for a high quality of life. But how can we achieve this ambitious objective?
 
